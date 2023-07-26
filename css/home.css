@@ -3,12 +3,16 @@
     margin: 0px;
     list-style: none;
     text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 main {
     overflow: hidden;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -32,32 +36,37 @@ nav {
     width: 100%;
     /* background-color: #0d0d0d; */
     height: 60px;
+    background-color: rgb(222, 184, 135);
     z-index: 100;
 }
 
 nav .togglingMenu {
     display: flex;
-    position: absolute;
+    position: fixed;
     gap: 12px;
     top: 60px;
     flex-direction: column;
     width: 100%;
-    height: 370px;
+    height: 100%;
     padding-right: 1em;
-    background-color: #0d0d0d;
+    background-color: burlywood;
     border-radius: 0px 0px 20px 20px;
     animation-name: openMenu;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    visibility: hidden;
+    visibility: visible;
 }
 
 @keyframes openMenu {
     0% {
+        visibility: hidden;
         height: 0px;
     }
     100% {
+        visibility: visible;
         opacity: 1;
-        height: 370px;
+        height: 100%;
     }
 }
 
@@ -66,26 +75,29 @@ nav .togglingMenu {
     position: absolute;
     gap: 12px;
     top: 60px;
+    background-color: burlywood;
     flex-direction: column;
     width: 100%;
-    height: 0px;
-    background: linear-gradient(rgb(90, 212, 216), rgb(90, 212, 216), #0eaee0, #0eaee0);
+    height: 400px;
     padding-right: 1em;
     border-radius: 0px 0px 20px 20px;
     animation-name: closeMenu;
     animation-duration: 1s;
     animation-iteration-count: 1;
     overflow: hidden;
+    visibility: hidden;
 }
 
 @keyframes closeMenu {
     0% {
+        visibility: visible;
         opacity: 1;
-        height: 370px;
+        height: 700px;
     }
     100% {
-        display: none;
+        visibility: hidden;
         height: 0px;
+        opacity: 0;
     }
 }
 
@@ -130,13 +142,16 @@ nav ul a {
     font-size: 2em;
     justify-content: center;
     color: #d1d1d1bf;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 100%;
     gap: 16px;
 }
 
 
 /* end menu */
+
+.slindeImg {
+    display: none;
+}
 
 .frontP {
     position: relative;
@@ -220,19 +235,17 @@ nav ul a {
 .frontP .slick-track {
     width: 100%;
     height: 100%;
-    background-color: blue;
 }
 
 .frontP .slick-list {
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: burlywood;
 }
 
 .frontP #slider {
     width: 50% !;
     height: 100% !important;
-    background-color: firebrick;
 }
 
 .frontP .slider img {
@@ -270,6 +283,7 @@ nav ul a {
     width: 100%;
     background: radial-gradient( #cacaca, #ffffff);
     padding-top: 50px;
+    height: 440px;
 }
 
 .beautySelector {
@@ -278,8 +292,8 @@ nav ul a {
     justify-content: center;
     align-items: center;
     width: 90%;
-    height: 180px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    height: 140px;
+    box-shadow: rgba(131, 92, 92, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .text-area {
@@ -294,6 +308,7 @@ nav ul a {
     text-align: center;
     font-size: 1.3em;
     color: black;
+    margin-bottom: 10px;
 }
 
 .services {
@@ -339,6 +354,7 @@ nav ul a {
     width: 100%;
     height: 20%;
     text-align: center;
+    color: black;
 }
 
 .ContainerVideo {
@@ -381,7 +397,7 @@ video {
     align-items: center;
     width: 100%;
     gap: 20px;
-    background-color: #f8e3bf;
+    background-color: rgb(245, 246, 234);
     overflow: hidden;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1024%26quot%3b)' fill='none'%3e%3cpath d='M1298.6945681252037 463.65417395311533L1440.2327403792044 451.4070985042857 1370.7871662019852 348.4498007931844z' fill='rgba(249%2c 215%2c 19%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M935.1945647400746 413.155520067732L1077.1136767986334 369.9143442981408 983.8222118932368 279.8238238536913z' fill='rgba(249%2c 215%2c 19%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M829.618%2c125.315C847.696%2c125.032%2c866.272%2c120.258%2c875.968%2c104.998C886.324%2c88.701%2c886.394%2c67.753%2c876.864%2c50.96C867.212%2c33.953%2c849.168%2c22.87%2c829.618%2c23.324C810.769%2c23.762%2c795.588%2c36.82%2c786.026%2c53.07C776.299%2c69.601%2c770.772%2c90.069%2c780.681%2c106.492C790.358%2c122.531%2c810.888%2c125.609%2c829.618%2c125.315' fill='rgba(249%2c 215%2c 19%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M479.958%2c275.175C497.68%2c274.764%2c514.271%2c266.191%2c523.228%2c250.893C532.279%2c235.435%2c532.225%2c216.416%2c523.531%2c200.754C514.568%2c184.607%2c498.426%2c172.961%2c479.958%2c172.942C461.46%2c172.923%2c445.578%2c184.702%2c436.227%2c200.663C426.76%2c216.821%2c423.584%2c236.835%2c433.063%2c252.986C442.445%2c268.971%2c461.428%2c275.605%2c479.958%2c275.175' fill='rgba(249%2c 215%2c 19%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1109.277%2c474.177C1153.485%2c474.979%2c1195.217%2c449.292%2c1214.918%2c409.709C1232.911%2c373.558%2c1217.788%2c332.686%2c1196.9%2c298.127C1176.934%2c265.095%2c1147.871%2c235.385%2c1109.277%2c234.931C1070.042%2c234.469%2c1037.691%2c262.078%2c1018.006%2c296.021C998.245%2c330.096%2c992.112%2c370.933%2c1010.073%2c405.991C1029.682%2c444.266%2c1066.278%2c473.397%2c1109.277%2c474.177' fill='rgba(249%2c 215%2c 19%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M279.01100076102426 395.7013079040058L284.2313986404381 296.0901824025834 132.20451144859763 338.06514833417384z' fill='rgba(249%2c 215%2c 19%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M54.548%2c157.731C81.767%2c157.561%2c109.216%2c147.42%2c122.773%2c123.816C136.285%2c100.29%2c131.486%2c71.328%2c117.537%2c48.059C104.019%2c25.508%2c80.836%2c10.439%2c54.548%2c10.004C27.486%2c9.556%2c1.901%2c22.785%2c-12.16%2c45.912C-26.79%2c69.975%2c-29.601%2c100.495%2c-15.173%2c124.679C-1.05%2c148.352%2c26.983%2c157.904%2c54.548%2c157.731' fill='rgba(249%2c 215%2c 19%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M451.1588094561881 492.0373327646574L632.8048612810943 466.6851532638554 536.3180794727383 338.64286911025806z' fill='rgba(249%2c 215%2c 19%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M826.947%2c425.02C852.991%2c422.69%2c876.085%2c410.465%2c890.435%2c388.606C906.593%2c363.994%2c916.945%2c333.891%2c904.194%2c307.353C889.882%2c277.567%2c859.975%2c255.383%2c826.947%2c256.476C795.316%2c257.523%2c774.282%2c285.004%2c758.078%2c312.189C741.318%2c340.307%2c723.123%2c374.108%2c740.177%2c402.048C756.884%2c429.42%2c795.007%2c427.877%2c826.947%2c425.02' fill='rgba(249%2c 215%2c 19%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M927.668%2c688.521C980.948%2c688.993%2c1036.981%2c668.649%2c1060.585%2c620.881C1082.488%2c576.556%2c1052.865%2c528.941%2c1027.49%2c486.509C1003.103%2c445.729%2c975.183%2c398.945%2c927.668%2c398.619C879.827%2c398.291%2c849.638%2c443.848%2c825.448%2c485.124C800.867%2c527.067%2c776.941%2c575.122%2c798.771%2c618.56C822.299%2c665.376%2c875.274%2c688.057%2c927.668%2c688.521' fill='rgba(249%2c 215%2c 19%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M116.631%2c193.677C160.446%2c192.964%2c202.225%2c175.803%2c226.626%2c139.404C254.31%2c98.109%2c267.972%2c45.846%2c245.448%2c1.525C221.026%2c-46.53%2c170.525%2c-78.106%2c116.631%2c-77.034C64.339%2c-75.994%2c20.837%2c-39.76%2c-3.608%2c6.478C-26.428%2c49.642%2c-26.132%2c102.007%2c0.254%2c143.088C24.755%2c181.233%2c71.301%2c194.415%2c116.631%2c193.677' fill='rgba(249%2c 215%2c 19%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M865.033%2c416.695C893.729%2c417.072%2c927.895%2c418.586%2c941.959%2c393.57C955.897%2c368.777%2c937.166%2c340.271%2c921.25%2c316.699C907.788%2c296.761%2c889.02%2c281.476%2c865.033%2c279.637C837.146%2c277.499%2c806.945%2c283.377%2c791.595%2c306.757C774.961%2c332.094%2c774.695%2c366.389%2c791.53%2c391.592C806.943%2c414.666%2c837.286%2c416.33%2c865.033%2c416.695' fill='rgba(249%2c 215%2c 19%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1024'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
 }
@@ -403,12 +419,11 @@ pre {
 }
 
 .welcome button {
-    background-color: black;
-    color: white;
+    background-color: burlywood;
+    color: black;
     font-size: 20px;
     width: 30%;
     padding: 0.7em;
-    border-radius: 25px;
     border: none;
     cursor: pointer;
     animation: slow 0.6s linear;
@@ -428,7 +443,7 @@ pre {
 .show {
     visibility: visible;
     animation: slow 0.6s linear;
-    height: 200px;
+    height: 100px;
 }
 
 @keyframes slow {
@@ -464,15 +479,13 @@ pre {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 600px;
-    background-color: rgb(245, 233, 208);
-    background: linear-gradient(#f8e3be, rgb(250, 236, 204));
+    height: 400px;
+    background-color: rgb(245, 246, 234);
     /* background: conic-gradient(from at 50% 50%, wheat, rgb(233, 173, 34)); */
 }
 
 .kindOfService h6 {
     font-size: 3em;
-    background-image: linear-gradient(to right, rgb(248, 209, 136), rgb(224, 224, 223), rgb(241, 186, 84));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -511,7 +524,7 @@ pre {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    width: 90%;
     height: 20%;
     gap: 2em;
     padding-top: 1em !important;
@@ -522,11 +535,14 @@ pre {
     align-items: center;
     justify-content: center;
     font-size: 1.1em;
-    width: 20%;
-    height: 70px;
+    width: 25%;
+    height: 50px;
+    border-radius: 20px;
     cursor: pointer;
-    border-bottom: 2px solid black;
+    border-right: 2px solid black;
     transition: 1s;
+    background-color: rgb(241, 186, 84);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 ol {
@@ -552,17 +568,17 @@ ol div {
 ol div li {
     text-align: center;
     width: 40%;
-    height: 45%;
+    height: 65%;
     font-size: 20px;
     border-radius: 70px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    animation: flipin 1 2s;
+    animation: flipin 1 0.9s;
     cursor: pointer;
 }
 
 @keyframes flipin {
     0% {
-        transform: translateX(900px) perspective(800px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        transform: translateX(500px) perspective(800px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     }
     100% {
         transform: translateX(0px) perspective(800px) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
@@ -666,8 +682,9 @@ object-fit: cover;
 
 .dragImg article li {
     background-color: rgba(245, 179, 57, 0.561);
-    width: 10%;
+    width: 29%;
     text-align: center;
+    padding: 10px;
 }
 
 .containerImage {
