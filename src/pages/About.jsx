@@ -33,16 +33,16 @@ const About = () => {
 
 <ul>
 
-<li><i class="bi bi-browser-firefox"></i> Brindamos tratamientos de primer nivel
+<li><i className="bi bi-browser-firefox"></i> Brindamos tratamientos de primer nivel
 </li>
 
-<li> <i class="bi bi-browser-edge"></i> ¡Adelgaza tu cuerpo, siéntete increíble!
+<li> <i className="bi bi-browser-edge"></i> ¡Adelgaza tu cuerpo, siéntete increíble!
 </li>
 
-<li> <i class="bi bi-activity"></i> Fortalece tu corazón y tu mente
+<li> <i className="bi bi-activity"></i> Fortalece tu corazón y tu mente
 </li>
 
-<li> <i class="bi bi-emoji-smile-fill"></i>Mejorar la apariencia general
+<li> <i className="bi bi-emoji-smile-fill"></i>Mejorar la apariencia general
 
 </li>
 

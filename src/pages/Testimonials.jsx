@@ -2,17 +2,54 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Navbar from '../components/Navbar';
 
 
 const Testimonials = () => {
 
-    const settings = {
-        dots: false,
-        infinite: true,
+    // const settings = {
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1
+    //   };
+
+
+        const settings = {
+        dots: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
-      };
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
 
 
       const testimonial = [
@@ -45,6 +82,7 @@ const Testimonials = () => {
   return (
 <>
 
+<Navbar/>
 <section className="testimonials">
 
 <h3>Testimonios</h3>
@@ -58,7 +96,7 @@ const Testimonials = () => {
         
 
 
-            <i class="bi bi-align-top"></i>
+            <i className="bi bi-align-top"></i>
 
         <div className="">
           <p>{resena}</p>

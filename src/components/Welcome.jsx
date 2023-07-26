@@ -43,7 +43,7 @@ const Welcome = () => {
   
   </p> */}
   
-  <p className={hideClass}> Estamos comprometidos con utilizar productos de alta calidad y técnicas innovadoras que aseguren que cada cliente se sienta mimado y cuidado. Nuestro equipo altamente capacitado se esfuerza por brindar un servicio personalizado y atento, asegurándonos de que tu experiencia sea memorable y satisfactoria en cada visita.
+  <p className={hideClass}> Estamos comprometidos con utilizar productos de alta calidad y técnicas innovadoras que aseguren que cada cliente se sienta mimado y cuidado.
   </p>
 
 {/* 

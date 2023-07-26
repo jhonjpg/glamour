@@ -1,72 +1,22 @@
 import React, { useState, TouchEvent, useRef } from "react";
+import MakeUpA from './beforeAfter/MakeUpA';
+import UnasA from './beforeAfter/UnasA';
+
+
 
 
 const DragImage = () => {
 
-    const [imageReveal, setimageReveal] = useState(0.5);
+    
+    const [dragImage, setdragImage] = useState("maquillaje")
+    
 
-    const imageContainer = useRef(undefined)
-
-    const slide = (xPosition) => {
-
-
-        const containterBounding = imageContainer.current.getBoundingClientRect()
-
-        // console.log(containterBounding)
-
-
-        setimageReveal(() => {
-
-            if(xPosition < containterBounding.left){
-
-
-                return 0
-            } else if(xPosition > containterBounding.right){
-
-                return 1
-            }else{
-
-                
-                return ((xPosition - containterBounding.left) / containterBounding.width)
-                
-               }
-
-
-        })
-
-
-    }
-
-
-    const handleMouseMove = (e) => {
-
-        slide(e.clientX)
-    }
-
-    const handleMouseUp = () => {
-
-        window.onmousemove = undefined
-        window.onmouseup = undefined
-
-    }
-
-    const handleMouseDown = () => {
-
-        window.onmousemove = handleMouseMove
-        window.onmouseup = handleMouseUp
-
-
-    }
-
-
-
-   const handleTouchMove = (e) => {
-
-    slide(e.touches.item(0).clientX)
-
-   }
+    function handleComponentClick(componentName) {
+        setdragImage(componentName);
+    
+      }
+    
    
-
     return (
 
 
@@ -74,8 +24,8 @@ const DragImage = () => {
 
 <ul className="">
 
-  <li onClick={() => handleComponentClick('nails')}>  UNAS</li>
-  <li onClick={() => handleComponentClick('makeUp')}>   MAQUILLAJE</li>
+  <li onClick={() => handleComponentClick('maquillaje')}>   MAQUILLAJE</li>
+  <li onClick={() => handleComponentClick('unas')}>  UNAS</li>
 
 
 </ul>
@@ -85,6 +35,12 @@ const DragImage = () => {
 
 <strong>Despues</strong>
 </aside>
+
+
+{dragImage === 'maquillaje' && <MakeUpA />}
+{dragImage === 'unas' && <UnasA />}
+
+{/* 
             <div ref={imageContainer} className="containerImage" >
                 
 
@@ -116,7 +72,7 @@ const DragImage = () => {
 
 
 
-            </div>
+            </div> */}
 
         </article>)
 }

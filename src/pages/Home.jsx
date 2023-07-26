@@ -42,12 +42,12 @@ const Home = () => {
   <p> Te invitamos a explorar el mundo de la belleza y estilos que tenemos para ti.</p>
 
 
-  <button>Comienza Ya <i className="bi bi-arrow-right"></i></button>
+  <button> <a href="#vidSecctionA">Comienza Ya  <i className="bi bi-arrow-right"></i></a></button>
 
 {/* <h3 > {letra} <p>{beautiful}</p> </h3> */}
 
 
-{/* 
+
 
 <div className="slindeImg">
 
@@ -55,14 +55,14 @@ const Home = () => {
   <SlideComp/>
 
 
-</div> */}
+</div>
 
 
 </section>
 
 
 
-<section className=" vidSecction">
+<section id="vidSecctionA" className=" vidSecction">
 
 <SelectorVideos/>
 

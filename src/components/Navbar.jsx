@@ -33,7 +33,7 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 
     <ul className={toggle}>
     <li className="nav-item"> <Link exact="true" to="/glamour/" activeclassname="active" >  Inicio</Link></li>
-         <li className="nav-item"> <Link to="/glamour/servicios"  >  Servicios</Link></li>
+         <li className="nav-item"> <Link to="/glamour/servicios"  >  Servicios+</Link></li>
          <li className="nav-item"> <Link to="/glamour/nosotros"  > Nosotros</Link></li>
          <li className="nav-item"> <Link to="/glamour/testimonios" >  Testimonios</Link></li>
          <li className="nav-item"> <Link to="/glamour/contacto" >  Contacto</Link></li>
@@ -65,10 +65,10 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 
     <ul className="">
     <li className="nav-item"> <NavLink exact="true" to="/glamour/" activeclassname="active" >  INICIO</NavLink></li>
-         <li className="nav-item"> <NavLink to="/glamour/servicios"  >  SERVICIOS</NavLink></li>
+         <li className="nav-item"> <NavLink to="/glamour/servicios"  >  SERVICIOS+</NavLink></li>
          <li className="nav-item"> <NavLink to="/glamour/nosotros"  > NOSOTROS</NavLink></li>
-         <li className="nav-item"> <NavLink to="/glamour/testimonios" >  Testimonios</NavLink></li>
-         <li className="nav-item"> <NavLink to="/glamour/contacto" >  Contacto</NavLink></li>
+         <li className="nav-item"> <NavLink to="/glamour/testimonios" >  TESTIMONIOS</NavLink></li>
+         <li className="nav-item"> <NavLink to="/glamour/contacto" >  CONTACTANOS</NavLink></li>
 
 
        </ul>
