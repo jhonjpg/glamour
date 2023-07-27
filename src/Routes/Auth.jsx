@@ -1,4 +1,4 @@
-import React, { Suspense, useState, useEffect } from 'react';
+import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -13,38 +13,20 @@ import ToesNails from '../componentsPages/ToesNails';
 import NailsPage from '../componentsPages/NailsPage';
 import SpaPage from '../componentsPages/SpaPage';
 import RockSpa from '../componentsPages/RockSpa';
-const LazyHome = React.lazy(() => import('../pages/Home'));
-
 
 
 
 
 const Auth = () => {
-
-  const [isComponentReady, setIsComponentReady] = useState(false);
-
-  useEffect(() => {
-    // Simular un retraso de 2 segundos antes de mostrar el componente
-    const delay = 5000;
-    const timer = setTimeout(() => {
-      setIsComponentReady(true);
-    }, delay);
-  
-    // Limpia el temporizador al desmontar el componente
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div>
-
 
 
       <BrowserRouter>
         <Routes>
 
-        <Route path="/glamour/" element={    <Suspense fallback={<div className="pantalla"> <div className="logito"></div></div>}>
-    {isComponentReady ? <LazyHome /> : null}
-  </Suspense>}></Route>
+        <Route index element={<Home />}></Route>
+        <Route path="/glamour/" element={<Home />}></Route>
            <Route path="/glamour/maquillaje" element={<MakeupPage />}></Route> 
            <Route path="/glamour/cabello" element={<HairPage />}></Route> 
            <Route path="/glamour/pies" element={<ToesNails />}></Route> 
