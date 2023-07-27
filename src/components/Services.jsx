@@ -3,6 +3,7 @@ import { MakeUp } from '../components/makeup/MakeUp';
 import { Nails } from '../components/makeup/Nails';
 import { Spa } from '../components/makeup/Spa';
 
+
 const Services = () => {
 
     
@@ -27,9 +28,9 @@ const Services = () => {
 <h6 className="">Servicios</h6>
 <ul>
 
-  <li onClick={() => handleComponentClick('nails')}>  una</li>
+  <li onClick={() => handleComponentClick('nails')}>  Uña</li>
   <li onClick={() => handleComponentClick('spa')}>  Spa</li>
-  <li onClick={() => handleComponentClick('makeUp')}>   Maquillaje</li>
+  <li onClick={() => handleComponentClick('makeUp')}>   Rostro</li>
 
 
 </ul>

@@ -78,7 +78,7 @@ const Home = () => {
 
 </section>
 
-<section className="kindOfService">
+<section id="servicios" className="kindOfService">
 
 <Services/>
 

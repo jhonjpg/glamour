@@ -11,6 +11,8 @@ const Contact = () => {
 <Navbar/>
 
       <section className="contactUs" >
+
+        <h2>Contactanos</h2>
         
         <div className="contact ">
 
