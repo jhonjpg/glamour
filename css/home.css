@@ -290,7 +290,6 @@ nav ul a {
 .frontP button {
     z-index: 1;
     background-color: black;
-    color: white;
     font-size: 20px;
     width: 60%;
     padding: 1em;
@@ -298,6 +297,10 @@ nav ul a {
     border: none;
     transition: 0.6s;
     cursor: pointer;
+}
+
+button a {
+    color: white !important;
 }
 
 .frontP button:hover {
