@@ -20,12 +20,12 @@ const handleScroll = () => {
 
 <header>
 
-<h2>Unas de los Pies</h2>
+<h2>Uña de los Pies</h2>
 
 <li className="nav-item" onClick={handleScroll} > <NavLink to="/glamour/"  >Inicio  </NavLink></li>
 
 <strong>&gt;</strong>
-         <li >Unas de los Pies</li>
+         <li >Uña de los Pies</li>
 
 
 
@@ -36,7 +36,7 @@ const handleScroll = () => {
     
 
     <div className="divRecomended">
-    <h3>Sobre cabello
+    <h3>Sobre Uñas de Pies
 </h3>
 
 <h4>Por Que lo Recomendamos
@@ -44,16 +44,21 @@ const handleScroll = () => {
 
 
 
-<p>Bienvenido a D'Patterson Glamour, su fuente de los tratamientos médicos de spa más avanzados disponibles. Nuestro equipo de profesionales médicos experimentados y altamente capacitados brinda una amplia gama de tratamientos de vanguardia diseñados para ayudarlo a verse y sentirse mejor.
-</p>
+<p>En nuestro negocio, te ofrecemos un servicio de uñas de pies excepcional para mantener tus pies hermosos y bien cuidados. Nuestro equipo de expertos en pedicura se enfoca en brindar una limpieza minuciosa, cortes precisos y un limado perfecto para lograr un acabado impecable. Además, te consentimos con una exfoliación revitalizante y una hidratación profunda que dejará tu piel suave y radiante.</p>
 
-<p>Ofrecemos una variedad de servicios como Botox, rellenos dérmicos, plasma rico en plaquetas, terapia de goteo intravenoso para pestañas, maquillaje permanente (PMU), blanqueamiento dental, sistema de cavitación Solift, modelado corporal, EMS moderno, depilación láser, Endosphere Full Body & Face, sauna médica y muchos más.
+<p>Disfruta de un relajante masaje que te hará sentir renovada y lista para lucir tus uñas con el esmaltado de tu elección. Ven y déjanos cuidar de tus pies en un ambiente cómodo y acogedor. ¡Tu comodidad y satisfacción son nuestra prioridad! Esperamos recibirte para brindarte una experiencia de pedicura excepcional."
+
+
+
+
+
+
 </p>
 
 
 <article className="">
 
-<h3>Nustros cabello
+<h3>Nustros Uñas de Pies
 </h3>
 
 <h4>Que incluyen el Servicio
@@ -62,20 +67,40 @@ const handleScroll = () => {
 
 <ul>
 
-<li> Brindamos tratamientos de primer nivel
+<li> Limpieza
 </li>
 
-<li>  ¡Adelgaza tu cuerpo, siéntete increíble!
+<li>  limado
 </li>
 
-<li>Fortalece tu corazón y tu mente
+<li>cutículas
 </li>
 
-<li> Mejorar la apariencia general
+<li> esmaltado
+
+</li>
+
+
+<li> uñas acrílicas
+
+</li>
+
+<li> arte de uñas
+
+</li>
+
+
+<li> brillo
+
+</li>
+
+
+<li> fijador
 
 </li>
 
 </ul>
+
 
 </article>
 
@@ -87,7 +112,7 @@ const handleScroll = () => {
 </div>
 
 <aside>
-<h6>Unas de los Pies</h6>
+<h6>Uña de los Pies</h6>
 
 <div className="pic4">
 </div>

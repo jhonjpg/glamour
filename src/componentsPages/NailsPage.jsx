@@ -44,16 +44,14 @@ const handleScroll = () => {
 
 
 
-<p>Bienvenido a D'Patterson Glamour, su fuente de los tratamientos médicos de spa más avanzados disponibles. Nuestro equipo de profesionales médicos experimentados y altamente capacitados brinda una amplia gama de tratamientos de vanguardia diseñados para ayudarlo a verse y sentirse mejor.
-</p>
+<p>En nuestro negocio, te ofrecemos un servicio de uñas excepcional para que luzcas manos impecables y elegantes. Nuestro equipo de especialistas en manicura y pedicura se dedica a crear diseños únicos y duraderos, utilizando productos de alta calidad para garantizar resultados sorprendentes.</p>
 
-<p>Ofrecemos una variedad de servicios como Botox, rellenos dérmicos, plasma rico en plaquetas, terapia de goteo intravenoso para pestañas, maquillaje permanente (PMU), blanqueamiento dental, sistema de cavitación Solift, modelado corporal, EMS moderno, depilación láser, Endosphere Full Body & Face, sauna médica y muchos más.
-</p>
+<p>Desde manicuras clásicas hasta arte de uñas personalizado, nos adaptamos a tus preferencias y estilo. Además, nuestro ambiente relajante te permitirá disfrutar de una experiencia de cuidado personalizada. Ven y déjanos consentirte con tratamientos de uñas que realcen tu belleza y te hagan sentir bien contigo misma. ¡Esperamos verte pronto para brindarte un servicio de uñas excepciona</p>
 
 
 <article className="">
 
-<h3>Nustros Uña
+<h3>Nustras Uña
 </h3>
 
 <h4>Que incluyen el Servicio
@@ -62,16 +60,35 @@ const handleScroll = () => {
 
 <ul>
 
-<li> Brindamos tratamientos de primer nivel
+<li> Limpieza
 </li>
 
-<li>  ¡Adelgaza tu cuerpo, siéntete increíble!
+<li>  limado
 </li>
 
-<li>Fortalece tu corazón y tu mente
+<li>cutículas
 </li>
 
-<li> Mejorar la apariencia general
+<li> esmaltado
+
+</li>
+
+
+<li> uñas acrílicas
+
+</li>
+
+<li> arte de uñas
+
+</li>
+
+
+<li> brillo
+
+</li>
+
+
+<li> fijador
 
 </li>
 

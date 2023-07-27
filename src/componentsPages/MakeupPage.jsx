@@ -47,10 +47,12 @@ const handleScroll = () => {
 
 
 
-<p>Bienvenido a D'Patterson Glamour, su fuente de los tratamientos médicos de spa más avanzados disponibles. Nuestro equipo de profesionales médicos experimentados y altamente capacitados brinda una amplia gama de tratamientos de vanguardia diseñados para ayudarlo a verse y sentirse mejor.
+<p>Experiencia profesional: En tu negocio, puedes ofrecer servicios de maquillaje realizados por maquilladores profesionales con experiencia y habilidades. La destreza de los expertos en maquillaje garantizará un resultado impecable y personalizado para cada cliente, brindándoles un aspecto que se adapte perfectamente a sus características faciales y estilo personal.
+
 </p>
 
-<p>Ofrecemos una variedad de servicios como Botox, rellenos dérmicos, plasma rico en plaquetas, terapia de goteo intravenoso para pestañas, maquillaje permanente (PMU), blanqueamiento dental, sistema de cavitación Solift, modelado corporal, EMS moderno, depilación láser, Endosphere Full Body & Face, sauna médica y muchos más.
+<p>Para muchos clientes, hacerse el maquillaje en tu negocio les permite ahorrar tiempo y esfuerzo. Al confiar en profesionales capacitados, pueden obtener un maquillaje impecable sin tener que preocuparse por aplicarlo ellos mismos, lo que les permite disfrutar de su tiempo y relajarse.
+
 </p>
 
 
@@ -65,18 +67,32 @@ const handleScroll = () => {
 
 <ul>
 
-<li> Brindamos tratamientos de primer nivel
+<li> Aplicación de maquillaje,
 </li>
 
-<li>  ¡Adelgaza tu cuerpo, siéntete increíble!
+<li>  impieza facial,
 </li>
 
-<li>Fortalece tu corazón y tu mente
+<li>preparación de la piel
 </li>
 
-<li> Mejorar la apariencia general
+<li> correcciones
 
 </li>
+
+
+
+<li> sombreado
+
+</li>
+
+
+<li> resaltado
+
+</li>
+
+<li>delineado</li>
+
 
 </ul>
 

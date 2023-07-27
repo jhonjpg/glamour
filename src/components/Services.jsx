@@ -16,6 +16,12 @@ const Services = () => {
 
   }
 
+
+  // function getComponentClassName(componentName) {
+  //   return activeComponent === componentName ? 'active' : 'inactive';
+  // }
+  
+
   return (
 
 
@@ -28,9 +34,9 @@ const Services = () => {
 <h6 className="">Servicios</h6>
 <ul>
 
-  <li onClick={() => handleComponentClick('nails')}>  Uña</li>
-  <li onClick={() => handleComponentClick('spa')}>  Spa</li>
-  <li onClick={() => handleComponentClick('makeUp')}>   Rostro</li>
+  <li  onClick={() => handleComponentClick('nails')} >  Uña</li>
+  <li  onClick={() => handleComponentClick('spa')}>  Spa</li>
+  <li  onClick={() => handleComponentClick('makeUp')}>   Rostro</li>
 
 
 </ul>

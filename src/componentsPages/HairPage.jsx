@@ -43,11 +43,9 @@ const handleScroll = () => {
 
 
 
-<p>Bienvenido a D'Patterson Glamour, su fuente de los tratamientos médicos de spa más avanzados disponibles. Nuestro equipo de profesionales médicos experimentados y altamente capacitados brinda una amplia gama de tratamientos de vanguardia diseñados para ayudarlo a verse y sentirse mejor.
-</p>
+<p>En nuestro negocio, te garantizamos una experiencia de cuidado capilar excepcional. Nuestro equipo de estilistas altamente capacitados está listo para brindarte cortes y peinados personalizados que realzarán tu belleza única</p>
 
-<p>Ofrecemos una variedad de servicios como Botox, rellenos dérmicos, plasma rico en plaquetas, terapia de goteo intravenoso para pestañas, maquillaje permanente (PMU), blanqueamiento dental, sistema de cavitación Solift, modelado corporal, EMS moderno, depilación láser, Endosphere Full Body & Face, sauna médica y muchos más.
-</p>
+<p>ofrecemos una amplia gama de tratamientos capilares de primera calidad para nutrir y revitalizar tu cabello. Ven y déjanos consentirte en un ambiente relajado y acogedor. ¡Tu satisfacción es nuestra prioridad! Confía en nosotros para lucir un cabello radiante y saludable. Te esperamos para transformar tu estilo en algo extraordinario.</p>
 
 
 <article className="">
@@ -61,16 +59,31 @@ const handleScroll = () => {
 
 <ul>
 
-<li> Brindamos tratamientos de primer nivel
+<li> Corte
 </li>
 
-<li>  ¡Adelgaza tu cuerpo, siéntete increíble!
+<li>  peinado
 </li>
 
-<li>Fortalece tu corazón y tu mente
+<li>lavado
 </li>
 
-<li> Mejorar la apariencia general
+<li> secado
+
+</li>
+
+
+<li> coloración
+
+</li>
+
+
+<li> tratamientos
+
+</li>
+
+
+<li> estilizado
 
 </li>
 

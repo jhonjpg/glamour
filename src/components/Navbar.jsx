@@ -17,6 +17,8 @@ const [serviceTg, setserviceTg] = useState(false)
 const toggleMenu = () => {
 
   settoggleOn(!toggleOn)
+  setserviceTg(false)
+
 
 }
 
@@ -36,7 +38,7 @@ const handleScroll = () => {
 
 
 const change = (e) => {
-  if (window.scrollY >= 100) {
+  if (window.scrollY >= 200) {
 
   setmenu(false)
 } else {
@@ -54,21 +56,30 @@ const toggle = `togglingOff ${toggleOn ? "togglingMenu" : ""}`
 const servToggle = `servicetgoff ${serviceTg ? "servicetg" : ""}`
 
 
+
   return (
 
 
     <>
 
     {/* phone Nav */}
-    <nav className={menu ? "nav " : "nav active"}>
+    <nav className={menu ? "navbar " : "navbar activated"}  >
+
+
+
 <div className="menu" onClick={toggleMenu}> 
 {toggleOn ?  <i className="bi bi-x-lg"></i> : <i className="bi bi-list"></i>}
+
+
 </div>
 
-    <ul className={toggle}>
+<div className="logoPh"></div>
+
+
+    <ul onClick={toggleMenu} className={toggle}>
     <li className="nav-item" onClick={handleScroll}> <Link exact="true" to="/glamour/" activeclassname="active" >  Inicio</Link></li>
  
- <li onClick={serviceOn} >   < ScrollLink
+ <li className="serNav" >   < ScrollLink
 to="servicios"
 smooth={true}
 duration={100}
@@ -76,6 +87,7 @@ offset={-70} // Ajusta el valor según el tamaño de tu Navbar
 spy={true}
 exact="true"
 className="nav-item"
+onClick={serviceOn}
 
 
 > Servicios+
@@ -102,11 +114,7 @@ className="nav-item"
 
        </ul>
 
-     
-
-       <div className="logo"></div>
-
-
+       <div className="logoPh"></div>
 
 
      </nav>
@@ -115,7 +123,7 @@ className="nav-item"
 {/* other device */}
 
 
-<div className={menu ? "devices " : "devices activ"}>
+<div className={menu ? "devices " : "devices activatedo"}>
 
 
 
@@ -154,7 +162,7 @@ className="nav-item"
 </li>
          <li className="nav-item" onClick={handleScroll}> <NavLink to="/glamour/nosotros"  > NOSOTROS</NavLink></li>
          <li className="nav-item" onClick={handleScroll}> <NavLink to="/glamour/testimonios" >  TESTIMONIOS</NavLink></li>
-         <li className="nav-item" onClick={handleScroll}> <NavLink to="/glamour/contacto" >  CONTACTO</NavLink></li>
+         <li className="nav-item" onClick={handleScroll}> <NavLink to="/glamour/contacto" >  CONTACTANOS</NavLink></li>
 
 
        </ul>

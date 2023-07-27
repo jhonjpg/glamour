@@ -43,11 +43,9 @@ const handleScroll = () => {
 
 
 
-<p>Bienvenido a D'Patterson Glamour, su fuente de los tratamientos médicos de spa más avanzados disponibles. Nuestro equipo de profesionales médicos experimentados y altamente capacitados brinda una amplia gama de tratamientos de vanguardia diseñados para ayudarlo a verse y sentirse mejor.
-</p>
+<p>En nuestro negocio, te ofrecemos una experiencia de masaje única y revitalizante con el toque especial de masaje con rocas calientes. Nuestros terapeutas expertos utilizan piedras volcánicas cuidadosamente calentadas para liberar tensiones y proporcionar un profundo alivio muscular. Este masaje combina la terapia tradicional con el calor reconfortante de las rocas, lo que aumenta la relajación y mejora la circulación sanguínea</p>
 
-<p>Ofrecemos una variedad de servicios como Botox, rellenos dérmicos, plasma rico en plaquetas, terapia de goteo intravenoso para pestañas, maquillaje permanente (PMU), blanqueamiento dental, sistema de cavitación Solift, modelado corporal, EMS moderno, depilación láser, Endosphere Full Body & Face, sauna médica y muchos más.
-</p>
+<p>Ven y sumérgete en una experiencia terapéutica y rejuvenecedora, donde nuestras habilidosas manos y las rocas calientes trabajan juntas para aliviar tu cuerpo y mente del estrés acumulado. ¡Déjanos consentirte y disfrutarás de un masaje con rocas que te dejará sintiéndote renovado y revitalizado</p>
 
 
 <article className="">
@@ -61,18 +59,22 @@ const handleScroll = () => {
 
 <ul>
 
-<li> Brindamos tratamientos de primer nivel
+<li> Aceites esenciales
 </li>
 
-<li>  ¡Adelgaza tu cuerpo, siéntete increíble!
+<li>  piedras volcánicas calentadas
 </li>
 
-<li>Fortalece tu corazón y tu mente
+<li>técnicas de masaje
 </li>
 
-<li> Mejorar la apariencia general
+<li> experiencia rejuvenecedora
 
 </li>
+
+<li>alivio muscular</li>
+
+<li>relajación</li>
 
 </ul>
 

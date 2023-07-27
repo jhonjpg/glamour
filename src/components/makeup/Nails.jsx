@@ -24,7 +24,7 @@ const handleScroll = () => {
 
   <li className="nav-item" onClick={handleScroll}> <Link to="/glamour/manos"  >
           
-          <img src=" https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" className="w-100 h-100 object-fit-cover"/> UNAS
+          <img src=" https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" className="w-100 h-100 object-fit-cover"/> Manos
           
           </Link></li>
         </div>

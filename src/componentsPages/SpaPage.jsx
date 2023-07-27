@@ -16,12 +16,12 @@ const handleScroll = () => {
 
 <header>
 
-<h2>Maquillaje</h2>
+<h2>Masaje</h2>
 
 <li className="nav-item" onClick={handleScroll} > <NavLink to="/glamour/"  >Inicio  </NavLink></li>
 
 <strong>&gt;</strong>
-         <li >  Maquillaje</li>
+         <li >  Masaje</li>
 
 
 
@@ -40,16 +40,14 @@ const handleScroll = () => {
 
 
 
-<p>Bienvenido a D'Patterson Glamour, su fuente de los tratamientos médicos de spa más avanzados disponibles. Nuestro equipo de profesionales médicos experimentados y altamente capacitados brinda una amplia gama de tratamientos de vanguardia diseñados para ayudarlo a verse y sentirse mejor.
-</p>
+<p>En nuestro negocio, te invitamos a experimentar un relajante y rejuvenecedor día de spa diseñado especialmente para ti. Nuestro equipo de expertos terapeutas está dedicado a proporcionarte un ambiente tranquilo y acogedor, donde podrás desconectarte del estrés diario y disfrutar de un cuidado personalizado.</p>
 
-<p>Ofrecemos una variedad de servicios como Botox, rellenos dérmicos, plasma rico en plaquetas, terapia de goteo intravenoso para pestañas, maquillaje permanente (PMU), blanqueamiento dental, sistema de cavitación Solift, modelado corporal, EMS moderno, depilación láser, Endosphere Full Body & Face, sauna médica y muchos más.
-</p>
+<p>Ofrecemos una amplia gama de tratamientos de spa, desde masajes terapéuticos hasta faciales revitalizantes y exfoliaciones corporales indulgentes. Además, contamos con opciones de paquetes que combinan varios servicios para que puedas disfrutar de una experiencia completa de bienestar. Ven y sumérgete en un oasis de relajación, permitiendo que nuestros profesionales te mimen y te ayuden a sentirte renovado y rejuvenecido. ¡Esperamos que nos elijas para ser tu destino de spa preferido</p>
 
 
 <article className="">
 
-<h3>Nustros Maquillajes
+<h3>Nustros Masajes
 </h3>
 
 <h4>Que incluyen el Servicio
@@ -58,18 +56,22 @@ const handleScroll = () => {
 
 <ul>
 
-<li> Brindamos tratamientos de primer nivel
+<li> Masajes
 </li>
 
-<li>  ¡Adelgaza tu cuerpo, siéntete increíble!
+<li>  faciales
 </li>
 
-<li>Fortalece tu corazón y tu mente
+<li>exfoliaciones
 </li>
 
-<li> Mejorar la apariencia general
+<li> envolturas corporales
 
 </li>
+
+<li>baños de vapor</li>
+
+<li>relajación</li>
 
 </ul>
 
@@ -83,7 +85,7 @@ const handleScroll = () => {
 </div>
 
 <aside>
-<h6>Maquillaje</h6>
+<h6>Masaje</h6>
 
 <div className="pic5"></div>
 
