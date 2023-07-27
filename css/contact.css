@@ -9,6 +9,14 @@
     background-color: burlywood
 }
 
+.contactUs h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3em;
+    color: rgb(139, 100, 49);
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px rgb(230, 198, 139), 6px 6px 5px rgb(1, 17, 1), 9px 9px 5px rgb(158, 122, 22);
+}
+
 .contact {
     display: flex;
     flex-direction: column;
