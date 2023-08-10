@@ -81,13 +81,13 @@ const MakeUpA = () => {
     <div ref={imageContainer} className="containerImage" >
                 
 
-    <img src="https://images.pexels.com/photos/458766/pexels-photo-458766.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    <img src="css/img/dMakeup2.jpg"
         alt="foto-1"
         className="w-100 h-100 object-fit-contain"
     />
 
-    <img style={{ filter: "grayscale(100%)", clipPath: `polygon(0 0, ${imageReveal * 100}% 0,${imageReveal * 100}% 100%, 0 100%)` }}
-src="https://images.pexels.com/photos/3762663/pexels-photo-3762663.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    <img style={{ filter: "grayscale(0%)", clipPath: `polygon(0 0, ${imageReveal * 100}% 0,${imageReveal * 100}% 100%, 0 100%)` }}
+src="css/img/dMakeup.jpg"
 alt="foto-2"
         className="changeImage"
     />

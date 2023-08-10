@@ -43,7 +43,7 @@ const SelectorVideos = () => {
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrMYprCYuzs0uqSPJRHtv_KxfJQEHe9IZ1iw&usqp=CAU" alt="" className="rounded-circle" />
 </div>
 
-<p>Make Up</p>
+<p>Maquillaje</p>
 
   </a>
 
@@ -54,7 +54,7 @@ const SelectorVideos = () => {
 
 </div>
 
-<p>Nails</p>
+<p>Una</p>
 
   </a>
 

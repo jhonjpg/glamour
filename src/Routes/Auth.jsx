@@ -13,6 +13,7 @@ import ToesNails from '../componentsPages/ToesNails';
 import NailsPage from '../componentsPages/NailsPage';
 import SpaPage from '../componentsPages/SpaPage';
 import RockSpa from '../componentsPages/RockSpa';
+import ScrollTop from '../components/ScrollTop';
 
 
 
@@ -23,6 +24,8 @@ const Auth = () => {
 
 
       <BrowserRouter>
+
+      <ScrollTop/>
         <Routes>
 
         <Route index element={<Home />}></Route>
